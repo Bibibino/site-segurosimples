@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var menu = document.querySelector("[data-menu]");
   var header = document.querySelector(".site-header");
 
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+
   if (document.body.classList.contains("home-page") && header) {
     var syncHeader = function () {
       header.classList.toggle("is-scrolled", window.scrollY > 18);

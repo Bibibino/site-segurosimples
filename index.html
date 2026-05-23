@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seguro Simples | Seguro viagem simples para embarcar tranquilo</title>
   <meta name="description" content="Compare planos de seguro viagem com clareza, orientação humana e experiência de quem entende de seguros e ama viajar.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo-seguro-simples.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="home-page">
   <header class="site-header">
     <div class="nav-wrap">
       <a class="brand" href="index.html" aria-label="Seguro Simples">
-        <img class="brand-mark" src="assets/logo-seguro-simples.svg" alt="Ícone Seguro Simples"><span class="brand-text"><strong>Seguro Simples</strong><small>segurosimples.net.br</small></span>
+        <span class="brand-mark-stack">
+          <img class="brand-mark" src="assets/logo-seguro-simples.svg" alt="Ícone Seguro Simples">
+          <img class="brand-mark brand-mark-eye" src="assets/logo-seguro-simples.svg" alt="" aria-hidden="true">
+        </span><span class="brand-text"><strong>Seguro Simples</strong><small>segurosimples.net.br</small></span>
       </a>
       <button class="hamburger" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false"><span></span></button>
       <nav class="nav-menu" data-menu>
-        <a class="active" href="index.html">Início</a><a href="cotacao.html">Cotar Seguro</a><a href="sobre.html">Sobre Nós</a><a href="contato.html">Contato</a><a href="guia.html">Guia do Viajante</a><a class="btn btn-primary btn-small" href="cotacao.html">Cotar agora</a>
+        <a href="cotacao.html">Cotar Seguro</a><a href="sobre.html">Sobre Nós</a><a href="contato.html">Contato</a><a href="guia.html">Guia do Viajante</a><a class="btn btn-primary btn-small" href="cotacao.html">Cotar agora</a>
       </nav>
     </div>
   </header>
@@ -82,47 +85,51 @@
     <section class="section compact">
       <div class="container">
         <div class="section-title"><p class="eyebrow">Benefícios</p><h2>Proteção que acompanha o ritmo da sua viagem.</h2></div>
-        <div class="benefits-bento">
-          <article class="bento-card bento-large">
-            <span class="badge blue">Essencial</span>
+        <div class="benefits-showcase">
+          <article class="benefit-feature">
+            <span class="badge">Essencial</span>
+            <div class="benefit-feature-icon"><i data-lucide="heart-pulse" aria-hidden="true"></i></div>
             <h3>Atendimento médico no exterior</h3>
-            <p>Suporte para imprevistos de saúde fora do Brasil, conforme os limites e condições do plano escolhido.</p>
+            <p>Suporte para despesas médicas, hospitalares e emergenciais fora do Brasil, conforme os limites e condições do plano escolhido.</p>
+            <a class="benefit-link" href="plano.html">Ver detalhes da cobertura</a>
           </article>
-          <article class="bento-card bento-aqua">
-            <h3>Assistência 24 horas</h3>
-            <p>Canais de acionamento para emergências durante a viagem.</p>
-          </article>
-          <article class="bento-card">
-            <h3>Extravio de bagagem</h3>
-            <p>Coberturas que ajudam em situações de atraso ou perda de bagagem.</p>
-          </article>
-          <article class="bento-card bento-sand">
-            <h3>Cancelamento ou interrupção</h3>
-            <p>Planos podem oferecer proteção para eventos previstos nas condições.</p>
-          </article>
-          <article class="bento-card">
-            <h3>Coberturas exigidas</h3>
-            <p>Alguns destinos podem pedir cobertura mínima para entrada.</p>
-          </article>
-          <article class="bento-card bento-wide">
-            <h3>Mais tranquilidade para imprevistos</h3>
-            <p>Compare alternativas com clareza e conte com orientação humana para escolher uma proteção adequada ao seu roteiro.</p>
-          </article>
+          <div class="benefit-mini-grid">
+            <article class="benefit-mini">
+              <div class="benefit-mini-icon"><i data-lucide="headset" aria-hidden="true"></i></div>
+              <h3>Assistência 24 horas</h3>
+              <p>Canais de acionamento para emergências durante a viagem.</p>
+            </article>
+            <article class="benefit-mini">
+              <div class="benefit-mini-icon"><i data-lucide="luggage" aria-hidden="true"></i></div>
+              <h3>Extravio de bagagem</h3>
+              <p>Coberturas que ajudam em situações de atraso ou perda de mala.</p>
+            </article>
+            <article class="benefit-mini">
+              <div class="benefit-mini-icon"><i data-lucide="calendar-x" aria-hidden="true"></i></div>
+              <h3>Cancelamento ou interrupção</h3>
+              <p>Planos podem oferecer proteção para eventos previstos nas condições.</p>
+            </article>
+            <article class="benefit-mini">
+              <div class="benefit-mini-icon"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+              <h3>Coberturas exigidas</h3>
+              <p>Alguns destinos podem pedir cobertura mínima para entrada.</p>
+            </article>
+          </div>
         </div>
         <p class="notice" style="margin-top:18px">As coberturas variam conforme o plano escolhido. Confira os detalhes antes da contratação.</p>
       </div>
     </section>
     <section class="section">
-      <div class="container grid grid-2">
-        <div>
+      <div class="container grid grid-2 trust-grid">
+        <div class="trust-copy">
           <p class="eyebrow">Confiança</p><h2>Atendimento com experiência de verdade</h2>
-          <p class="lead">A Seguro Simples nasceu da experiência de quase 20 anos no mercado de seguros e da paixão por viajar. Nossa missão é ajudar você a escolher um seguro viagem de forma clara, simples e segura.</p>
-          <p class="lead"><strong>Mais do que vender seguro, a gente entende de viagem.</strong></p>
+          <p class="lead">A Seguro Simples nasceu da experiência de quase 20 anos no mercado de seguros e da vivência de um casal que também ama viajar. Nossa missão é ajudar você a escolher um seguro viagem de forma clara, simples e segura.</p>
+          <p class="lead"><strong>Mais do que vender seguro, a gente entende de viagem na prática.</strong></p>
         </div>
-        <div class="card">
-          <div class="placeholder-avatar">SS</div>
-          <h3>Especialista em seguros há quase 20 anos</h3>
-          <p>Viajante apaixonada, atendimento próximo e orientação cuidadosa.</p>
+        <div class="trust-card">
+          <img class="trust-photo" src="assets/confianca.webp" alt="Casal dono da Seguro Simples" loading="lazy" width="1280" height="961">
+          <h3>Casal viajante com experiência em seguros</h3>
+          <p>Atendimento próximo, orientação cuidadosa e olhar de quem conhece os detalhes de uma viagem.</p>
         </div>
       </div>
     </section>
@@ -178,14 +185,28 @@
         <div class="actions"><a class="btn btn-secondary" href="faq.html">Ver todas as dúvidas</a></div>
       </div>
     </section>
-    <section class="section">
-      <div class="container card" style="text-align:center">
-        <h2>Vai viajar? Cotar seu seguro leva menos de 2 minutos.</h2>
-        <div class="actions" style="justify-content:center"><a class="btn btn-primary" href="cotacao.html">Comparar planos agora</a></div>
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="final-cta-card">
+          <div class="final-cta-content">
+            <span class="final-cta-badge">Rápido e fácil</span>
+            <h2>Vai viajar? Cotar seu seguro leva <span>menos de 2 minutos.</span></h2>
+            <p>Compare opções, veja coberturas com clareza e conte com orientação humana para escolher uma proteção adequada ao seu roteiro.</p>
+            <div class="final-cta-actions">
+              <a class="btn btn-primary" href="cotacao.html">Comparar planos agora</a>
+              <a class="btn btn-secondary" href="contato.html">Falar com especialista</a>
+            </div>
+            <div class="final-cta-trust">
+              <div class="trust-avatars" aria-hidden="true"><span>SS</span><span>20</span><span>+</span></div>
+              <p>Experiência em seguros, olhar de viajante e atendimento próximo.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><img class="brand-mark" src="assets/logo-seguro-simples.svg" alt="Ícone Seguro Simples"><span class="brand-text"><strong>Seguro Simples</strong><small>segurosimples.net.br</small></span></a><p style="margin-top:16px">Seguro viagem simples, claro e com orientação de quem entende.</p></div><div class="footer-links"><h3>Site</h3><a href="index.html">Início</a><a href="cotacao.html">Cotar Seguro</a><a href="guia.html">Guia do Viajante</a><a href="sobre.html">Sobre Nós</a><a href="faq.html">Dúvidas</a><a href="contato.html">Contato</a></div><div class="footer-links"><h3>Legal</h3><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de Uso</a></div></div><div class="container footer-note">A Seguro Simples atua como canal de cotação e contratação de seguro viagem por meio de parceiros autorizados. As coberturas, exclusões, limites e condições variam conforme o plano escolhido. Domínio: segurosimples.net.br</div></footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
