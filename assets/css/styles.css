@@ -294,10 +294,12 @@ p {
   overflow: hidden;
   min-height: 620px;
   padding: 132px 0 150px;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(94, 232, 255, 0.28), transparent 26%),
-    radial-gradient(circle at 88% 22%, rgba(248, 233, 200, 0.20), transparent 25%),
-    linear-gradient(145deg, #032b72 0%, var(--blue-900) 44%, var(--blue-700) 100%);
+  background-image:
+    linear-gradient(145deg, rgba(3, 43, 114, 0.82) 0%, rgba(6, 59, 142, 0.74) 46%, rgba(8, 123, 234, 0.58) 100%),
+    radial-gradient(circle at 18% 18%, rgba(94, 232, 255, 0.18), transparent 28%),
+    url("../Santorini_wave_pattern.webp");
+  background-position: center, center, center;
+  background-size: cover, cover, cover;
 }
 
 .hero::before,
@@ -828,6 +830,281 @@ p {
   border-radius: 50%;
 }
 
+.process-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(38, 198, 218, 0.14), transparent 28%),
+    linear-gradient(180deg, var(--sky), #ffffff);
+}
+
+.process-title {
+  max-width: 860px;
+}
+
+.process-list {
+  position: relative;
+  display: grid;
+  gap: 28px;
+}
+
+.process-list::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 34px;
+  bottom: 34px;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, rgba(8, 123, 234, 0.28), transparent);
+}
+
+.process-step {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  padding-left: 48px;
+}
+
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 34px;
+  width: 20px;
+  height: 20px;
+  border: 5px solid var(--white);
+  border-radius: 999px;
+  background: var(--blue-700);
+  box-shadow: 0 8px 20px rgba(8, 123, 234, 0.25);
+}
+
+.process-media {
+  min-height: 260px;
+  overflow: hidden;
+  border-radius: 28px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow);
+}
+
+.process-media-europe {
+  background-image: linear-gradient(180deg, rgba(6, 59, 142, 0.04), rgba(6, 59, 142, 0.24)), url("../como-funciona-1.webp");
+}
+
+.process-media-usa {
+  background-image: linear-gradient(180deg, rgba(6, 59, 142, 0.04), rgba(6, 59, 142, 0.24)), url("../como-funciona-2.webp");
+  background-position: center 42%;
+}
+
+.process-media-cruise {
+  background-image: linear-gradient(180deg, rgba(6, 59, 142, 0.04), rgba(6, 59, 142, 0.24)), url("../como-funciona-3.webp");
+}
+
+.process-copy {
+  padding: 10px 0;
+}
+
+.step-label {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  color: var(--blue-900);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: #e8fbff;
+}
+
+.process-copy h3 {
+  font-size: clamp(1.55rem, 3vw, 2.45rem);
+}
+
+.process-copy p {
+  max-width: 560px;
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+
+.benefits-bento {
+  display: grid;
+  gap: 14px;
+}
+
+.bento-card {
+  position: relative;
+  min-height: 190px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid rgba(217, 232, 247, 0.9);
+  border-radius: 28px;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.bento-card::after {
+  content: "";
+  position: absolute;
+  right: -52px;
+  bottom: -52px;
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  background: rgba(38, 198, 218, 0.16);
+}
+
+.bento-card h3,
+.bento-card p,
+.bento-card .badge {
+  position: relative;
+  z-index: 1;
+}
+
+.bento-card h3 {
+  font-size: clamp(1.22rem, 2vw, 1.7rem);
+}
+
+.bento-card p {
+  max-width: 48ch;
+  margin-top: 10px;
+}
+
+.bento-large {
+  min-height: 320px;
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(6, 59, 142, 0.94), rgba(8, 123, 234, 0.78)),
+    url("../Santorini_wave_pattern.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.bento-large h3,
+.bento-large p {
+  color: var(--white);
+}
+
+.bento-large p {
+  color: #e7f7ff;
+}
+
+.bento-aqua {
+  background: linear-gradient(135deg, #e8fbff, #ffffff);
+}
+
+.bento-sand {
+  background: linear-gradient(135deg, #fff7e5, #ffffff);
+}
+
+.bento-wide {
+  background: linear-gradient(135deg, #ffffff, #edf8ff);
+}
+
+.destinations-editorial {
+  display: grid;
+  gap: 18px;
+}
+
+.destination-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 430px;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 18px 42px rgba(6, 59, 142, 0.13);
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.destination-europe {
+  background-image: url("../europa.webp");
+}
+
+.destination-usa {
+  background-image: url("../EUA.webp");
+  background-size: 112%;
+}
+
+.destination-cruise {
+  background-image: url("../cruzeiro.webp");
+}
+
+.destination-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(6, 59, 142, 0.02) 0%, rgba(3, 24, 67, 0.18) 42%, rgba(3, 24, 67, 0.78) 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), transparent 36%);
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 54px rgba(6, 59, 142, 0.18);
+}
+
+.destination-panel {
+  width: 100%;
+  padding: 28px;
+  color: var(--white);
+}
+
+.destination-panel h3 {
+  color: var(--white);
+  font-size: clamp(1.65rem, 3vw, 2.55rem);
+  text-shadow: 0 3px 18px rgba(3, 24, 67, 0.35);
+}
+
+.destination-panel p {
+  max-width: 30ch;
+  margin-top: 10px;
+  color: #e9f7ff;
+  text-shadow: 0 2px 14px rgba(3, 24, 67, 0.45);
+}
+
+.destination-panel .btn {
+  margin-top: 18px;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+}
+
+.destination-panel .btn:hover {
+  color: var(--blue-900);
+  background: var(--white);
+}
+
+.faq-preview {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-preview article {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.faq-preview h3 {
+  font-size: 1.05rem;
+}
+
+.faq-preview p {
+  margin-top: 8px;
+}
+
 .checkout-layout {
   display: grid;
   gap: 24px;
@@ -890,6 +1167,47 @@ p {
 
   .footer-grid {
     grid-template-columns: 1.2fr 1fr 1fr;
+  }
+
+  .process-step {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 34px;
+    padding-left: 0;
+  }
+
+  .process-step.reverse .process-media {
+    order: 2;
+  }
+
+  .process-list::before,
+  .process-step::before {
+    display: none;
+  }
+
+  .process-media {
+    min-height: 360px;
+  }
+
+  .benefits-bento {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(180px, auto);
+  }
+
+  .bento-large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .bento-wide {
+    grid-column: span 2;
+  }
+
+  .destinations-editorial {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .faq-preview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

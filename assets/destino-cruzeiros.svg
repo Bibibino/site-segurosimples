@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Composição editorial de cruzeiro sobre mar azul">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff9ff"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9fbff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26c6da"/>
+      <stop offset="0.62" stop-color="#087bea"/>
+      <stop offset="1" stop-color="#063b8e"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.07"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <path d="M0 520 C120 488 238 543 368 505 C554 452 710 410 900 458 L900 1200 L0 1200 Z" fill="url(#sea)"/>
+  <path d="M0 647 C170 608 330 670 515 626 C690 586 784 545 900 574" fill="none" stroke="#ffffff" stroke-width="14" opacity="0.45"/>
+  <path d="M0 735 C160 700 312 755 470 721 C635 686 763 650 900 678" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.32"/>
+  <g transform="translate(112 328)">
+    <path d="M60 350 L660 350 C622 474 506 535 336 535 C192 535 93 476 60 350 Z" fill="#ffffff"/>
+    <path d="M168 270 L548 270 C594 270 633 304 646 350 L82 350 C97 302 126 270 168 270 Z" fill="#f7fcff"/>
+    <rect x="228" y="170" width="230" height="102" rx="20" fill="#063b8e"/>
+    <rect x="286" y="94" width="118" height="82" rx="18" fill="#087bea"/>
+    <g fill="#26c6da">
+      <circle cx="175" cy="395" r="23"/><circle cx="262" cy="395" r="23"/><circle cx="349" cy="395" r="23"/><circle cx="436" cy="395" r="23"/><circle cx="523" cy="395" r="23"/>
+    </g>
+    <g fill="#ffffff" opacity="0.72">
+      <rect x="258" y="202" width="34" height="34" rx="10"/><rect x="326" y="202" width="34" height="34" rx="10"/><rect x="394" y="202" width="34" height="34" rx="10"/>
+    </g>
+  </g>
+  <rect width="900" height="1200" fill="#000000" opacity="0.05" filter="url(#grain)"/>
+</svg>

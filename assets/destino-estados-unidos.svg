@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Composição editorial de viagem urbana para os Estados Unidos">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#aeeeff"/>
+      <stop offset="0.55" stop-color="#f4faff"/>
+      <stop offset="1" stop-color="#d7efff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087bea"/>
+      <stop offset="1" stop-color="#022b84"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.07"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky)"/>
+  <circle cx="670" cy="220" r="100" fill="#f8e9c8" opacity="0.78"/>
+  <path d="M0 610 C165 560 296 593 452 552 C632 505 762 450 900 488 L900 1200 L0 1200 Z" fill="#26c6da" opacity="0.55"/>
+  <g transform="translate(82 260)">
+    <rect x="0" y="315" width="138" height="530" rx="18" fill="#ffffff"/>
+    <rect x="166" y="160" width="180" height="685" rx="22" fill="url(#glass)"/>
+    <rect x="382" y="35" width="156" height="810" rx="20" fill="#ffffff"/>
+    <rect x="574" y="250" width="178" height="595" rx="22" fill="#063b8e"/>
+    <g opacity="0.38" fill="#ffffff">
+      <rect x="202" y="214" width="28" height="34" rx="8"/><rect x="258" y="214" width="28" height="34" rx="8"/>
+      <rect x="202" y="294" width="28" height="34" rx="8"/><rect x="258" y="294" width="28" height="34" rx="8"/>
+      <rect x="202" y="374" width="28" height="34" rx="8"/><rect x="258" y="374" width="28" height="34" rx="8"/>
+      <rect x="616" y="304" width="34" height="42" rx="9"/><rect x="684" y="304" width="34" height="42" rx="9"/>
+      <rect x="616" y="402" width="34" height="42" rx="9"/><rect x="684" y="402" width="34" height="42" rx="9"/>
+    </g>
+    <g fill="#087bea" opacity="0.42">
+      <rect x="420" y="104" width="34" height="44" rx="9"/><rect x="474" y="104" width="34" height="44" rx="9"/>
+      <rect x="420" y="198" width="34" height="44" rx="9"/><rect x="474" y="198" width="34" height="44" rx="9"/>
+    </g>
+  </g>
+  <rect width="900" height="1200" fill="#000000" opacity="0.06" filter="url(#grain)"/>
+</svg>
