@@ -40,6 +40,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelectorAll("[data-date-br]").forEach(function (field) {
+    field.addEventListener("input", function () {
+      var value = field.value.replace(/\D/g, "").slice(0, 8);
+      var parts = [];
+
+      if (value.length > 0) {
+        parts.push(value.slice(0, 2));
+      }
+      if (value.length > 2) {
+        parts.push(value.slice(2, 4));
+      }
+      if (value.length > 4) {
+        parts.push(value.slice(4, 8));
+      }
+
+      field.value = parts.join("/");
+    });
+  });
+
   document.querySelectorAll("[data-tab]").forEach(function (tab) {
     tab.addEventListener("click", function () {
       var target = tab.getAttribute("data-tab");

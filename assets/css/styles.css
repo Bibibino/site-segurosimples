@@ -886,6 +886,10 @@ p {
   margin-top: 10px;
 }
 
+.trust-actions {
+  margin-top: 28px;
+}
+
 .process-section {
   position: relative;
   overflow: hidden;
@@ -1324,13 +1328,6 @@ p {
   margin: 0 auto;
   font-size: clamp(2.05rem, 5vw, 4.4rem);
   line-height: 1.08;
-}
-
-.final-cta-card h2 span {
-  color: transparent;
-  background: linear-gradient(90deg, var(--blue-700), var(--aqua));
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .final-cta-card p {
