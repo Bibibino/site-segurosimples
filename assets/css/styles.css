@@ -85,19 +85,13 @@ button {
   transition: background 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease, box-shadow 0.25s ease;
 }
 
-.home-page .site-header:not(.is-scrolled) .brand,
-.home-page .site-header:not(.is-scrolled) .brand-text small,
 .home-page .site-header:not(.is-scrolled) .nav-menu a:not(.btn) {
   color: var(--white);
 }
 
-.home-page .site-header:not(.is-scrolled) .brand-mark {
-  filter: brightness(0) invert(1) drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
-}
-
-.home-page .site-header:not(.is-scrolled) .brand-mark-eye {
-  display: block;
-  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
+.home-page .site-header:not(.is-scrolled) .brand {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .home-page .site-header:not(.is-scrolled) .hamburger {
@@ -159,25 +153,6 @@ button {
   filter: drop-shadow(0 8px 14px rgba(8, 123, 234, 0.18));
 }
 
-.brand-mark-stack {
-  position: relative;
-  display: inline-grid;
-  width: 46px;
-  height: 46px;
-  flex: 0 0 auto;
-}
-
-.brand-mark-stack .brand-mark {
-  grid-area: 1 / 1;
-}
-
-.brand-mark-eye {
-  position: absolute;
-  inset: 0;
-  display: none;
-  clip-path: circle(21% at 46% 51%);
-}
-
 .brand-text {
   display: grid;
   line-height: 1.08;
@@ -204,6 +179,10 @@ button {
 
 .nav-menu.is-open {
   display: flex;
+}
+
+.nav-links {
+  display: contents;
 }
 
 .nav-menu a {
@@ -1561,6 +1540,41 @@ p {
     font-size: 0.92rem;
   }
 
+  .nav-wrap {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+  }
+
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .nav-links {
+    display: flex;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    pointer-events: auto;
+  }
+
+  .nav-menu .btn-primary {
+    grid-column: 3;
+    justify-self: end;
+    pointer-events: auto;
+  }
+
   .home-page .site-header:not(.is-scrolled) .nav-menu a:not(.btn):hover,
   .home-page .site-header:not(.is-scrolled) .nav-menu a:not(.btn).active {
     color: var(--white);
@@ -1588,11 +1602,6 @@ p {
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
-  }
-
-  .brand-mark-stack {
     width: 40px;
     height: 40px;
   }
